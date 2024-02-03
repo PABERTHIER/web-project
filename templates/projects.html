@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Projects</title>
+</head>
+
+<body onload="checkUserCookie(); showProjects(); createTable(); showLogin()">
+    </br></br>
+    <h1 class="title">Projects</h1></br></br>
+    <header>
+        <nav>
+            <ul class="tab">
+                <li><a onclick="openTab(id = 'homePage')">Home Page</a></li>
+                <li class="tabs"><a onclick="openTab(id = 'projects')">Projects</a></li>
+                <li class="tabs"><a onclick="openTab(id = 'features')">Features</a></li>
+                <li class="login" id="login"></li>
+            </ul>
+        </nav></br></br></br>
+    </header>
+
+    <section>
+        <div class="project" id="tasks">
+            <label for="project">Project Name:</label><br />
+            <select id="project"></select>
+            <button class="check-button" onclick="check()">Check</button>
+            <div class="submit-button">
+                <button onclick="send()">Submit</button>
+            </div>
+            <div class="create-project">
+                <button onclick="create()">Create Project</button>
+            </div>
+        </div>
+        <div class="table" id="username">
+        </div>
+    </section>
+    <br /><br /><br /><br />
+
+    <div class="footer">
+        <p></p>Copyright - All rights reserved<br />
+        <a href="mailto:pierre-antoine.berthier@esme.fr">Contact Us</a></p>
+    </div>
+</body>
+
+<script src="../scripts/projects.js"></script>
+<script src="../scripts/cookies.js"></script>
+<style scoped>
+    @import "../statics/css/projects.css";
+</style>
+
+</html>

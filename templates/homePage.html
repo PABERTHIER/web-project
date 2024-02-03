@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+</head>
+
+<body onload="checkUserCookie(); showProjects(); showLogin()">
+    </br></br>
+    <h1 class="title">Home Page</h1></br></br>
+    <header>
+        <nav>
+            <ul class="tab">
+                <li><a onclick="openTab(id = 'homePage')">Home Page</a></li>
+                <li class="tabs"><a onclick="openTab(id = 'projects')">Projects</a></li>
+                <li class="tabs"><a onclick="openTab(id = 'features')">Features</a></li>
+                <!-- <li class="tabs"><a onclick="openTab(id = 'form')">Form</a></li> -->
+                <li class="tabs"><a onclick="checkAdmin()">Form</a></li>
+                <li class="login" id="login"></li>
+            </ul>
+        </nav></br></br></br>
+    </header>
+
+    <section>
+        <h2>Tasks :</h2><br />
+        <div class="project" id="tasks">
+            <label for="project">Project Name:</label><br />
+            <select id="project"></select>
+            <input type="text" class="tasks, input-task" id="task-name" autocomplete="new-task" name="name-task"
+                placeholder="Task Name:" autofocus required />
+            <textarea class="tasks" rows="2" cols="70" name="textarea-tasks" id="textarea-tasks"
+                placeholder="Task Description:"></textarea>
+            <button class="tasks, button-task" onclick="addTask(), reset()">Add Task</button>
+        </div>
+        <hr />
+        <div id="conteneur"></div>
+    </section>
+    <br /><br /><br /><br />
+
+    <div class="footer">
+        <p></p>Copyright - All rights reserved<br />
+        <a href="mailto:pierre-antoine.berthier@esme.fr">Contact Us</a></p>
+    </div>
+</body>
+
+<script src="../scripts/homePage.js"></script>
+<script src="../scripts/cookies.js"></script>
+<style scoped>
+    @import "../statics/css/homePage.css";
+</style>
+
+</html>

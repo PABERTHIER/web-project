@@ -1,0 +1,236 @@
+html {
+    height: 100%;
+    background: linear-gradient(#e66465, #9198e5);
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+.title {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tabs {
+    text-align: center;
+  }
+
+  .login {
+    float:right;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+#conteneur
+{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    overflow: hidden;
+}
+
+.element
+{
+	width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.element:nth-child(n) 
+{
+    width: 450px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.element-text
+{
+	width: 410px;
+    height: 125px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: black; 
+  }
+
+
+@media(min-width: 400px) {
+    .element-child  {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+}
+
+.button-task-show {
+    background-color: #333;
+    width: 30px;
+    height: 20px;
+    border-color: #333;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.button-task-show-delete {
+    background-color: #333;
+    width: 30px;
+    height: 20px;
+    border-color: #333;
+    color: red;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.task-title-show {
+    text-align: center;
+}
+
+@media(min-width: 400px) {
+    .button-content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+}
+
+.tasks {
+    border-radius: 5px;
+}
+
+.input-task {
+    height: 30px;
+}
+
+hr {
+    height:2px;
+    border:none;
+    color:#000;
+    background-color:#000;
+    width:100%;
+    text-align:left;
+    margin: 10 auto 0 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+@media(min-width: 768px) {
+    .project {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+}
+
+.project a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+.button-task {
+    -moz-box-shadow: inset 0px 1px 0px 0px #333;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #333;
+    box-shadow: inset 0px 1px 0px 0px #333;
+    background-color: #333;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+    
+.button-task:hover {
+    padding-right: 25px;
+}

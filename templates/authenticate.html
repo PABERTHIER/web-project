@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
+    <meta charset="utf-8" />
+    <title>Authenticate</title>
+</head>
+
+<body onload="cancel('id01', 'block')">
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" id="form1" runat="server">
+            <h1>Authenticate</h1>
+
+            <div class="container" onkeypress="handleKeyPress(event)">
+                <label for="username"><b>Username</b>
+                    <input type="text" autocomplete="username" placeholder="Enter Username" id="username" autofocus
+                        required></label>
+
+                <label for="password"><b>Password</b>
+                    <input type="password" autocomplete="new-password" placeholder="Enter Password" id="password"
+                        required></label>
+
+                <button type="sumbit" class="login-button" onclick="require(), login()">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked"> Remember me
+                </label>
+            </div>
+
+            <div class="container-cancel">
+                <span class="psw"><a href="mailto:pierre-antoine.berthier@esme.fr">Forgot Password
+                        ?</a></span></br></br></br>
+            </div>
+    </div>
+
+</body>
+<script src="../scripts/cookies.js"></script>
+<script src="../scripts/authenticate.js"></script>
+<style scoped>
+    @import "../statics/css/authenticate.css";
+</style>
+
+</html>
